@@ -11,6 +11,7 @@ end
 local routes = {
     ["sribuhost.com"] = "http://sribuhost_com",
     ["www.sribuhost.com"] = "http://sribuhost_com",
+    ["specskita.com"] = "http://specskita_com",
     -- Tambahkan domain lain di sini
 }
 
