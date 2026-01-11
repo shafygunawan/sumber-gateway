@@ -1,6 +1,6 @@
 # Sumber Gateway
 
-API Gateway dengan auto SSL (Let's Encrypt), dynamic routing, rate limiting, dan security headers.
+Gateway dengan auto SSL (Let's Encrypt), dynamic routing, rate limiting, dan security headers.
 
 ## Features
 
@@ -8,9 +8,8 @@ API Gateway dengan auto SSL (Let's Encrypt), dynamic routing, rate limiting, dan
 -   ✅ Dynamic routing tanpa restart
 -   ✅ Rate limiting untuk mencegah abuse
 -   ✅ Security headers (X-Frame-Options, X-XSS-Protection, dll)
--   ✅ Health check endpoint
 -   ✅ Proper error handling dan logging
--   ✅ Docker support dengan health checks
+-   ✅ Docker support
 
 ## Installation
 
@@ -28,7 +27,7 @@ API Gateway dengan auto SSL (Let's Encrypt), dynamic routing, rate limiting, dan
     ```
 4. Verify gateway is running:
     ```bash
-    curl http://localhost/health
+    curl https://{your-ip-or-domain}
     ```
 
 ## Add New Host/Domain
@@ -67,8 +66,6 @@ _Note: Ensure your new target service is running and accessible within the Docke
 
 ## Monitoring
 
--   **Health check**: `http://your-server/health`
--   **Docker health**: `docker ps` (lihat status HEALTH)
 -   **Logs**: `docker compose logs -f gateway`
 
 ## Security Features
